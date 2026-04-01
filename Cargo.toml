@@ -1,0 +1,15 @@
+[package]
+name = "pdf-mcp"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1"
+base64 = "0.22"
+pdf_oxide = "0.3"
+rmcp = { version = "=1.2.0", features = ["server", "transport-io"] }
+schemars = "1.0"
+serde = { version = "1", features = ["derive"] }
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "io-std"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
